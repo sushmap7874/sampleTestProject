@@ -4,7 +4,7 @@ const _ = require('lodash');
 const globalVariables = _.pick(global, ['browser', 'expect']);
 
 const opts = {
-    headless: false,
+    headless: true,
     slowMo: 100,
     timeout: 90000
 };

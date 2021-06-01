@@ -3,7 +3,7 @@ const Login = require('../page/Login');
 
 var loginPage = new Login();
 
-describe('sample test', () => {
+describe.skip('sample test', () => {
     beforeEach(async function () {
         await page.goto('https://accounts.google.com/signin/v2/identifier?flowName=GlifWebSignIn&flowEntry=ServiceLogin');
     });
@@ -14,6 +14,6 @@ describe('sample test', () => {
     });
 
     it('should have login the user', async () => {
-        await loginPage.login(page, "userTest9901@gmail.com", "Test@1234");
+        await loginPage.login(page, "userTest9901@gmail.com", "Test@123");
     });
 });
